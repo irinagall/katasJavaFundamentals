@@ -1,4 +1,4 @@
-package practiceKatas;
+package practicekatas_exercism;
 /*
 * Instructions
 
