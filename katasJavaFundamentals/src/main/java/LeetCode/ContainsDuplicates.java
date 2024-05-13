@@ -8,23 +8,26 @@ public class ContainsDuplicates {
         public boolean containsDuplicate(int[] nums) {
 
             // Create a HashSet to store unique elements
-            HashSet<Integer> set = new HashSet<>();
+            HashSet<Integer> setToStoreDistinctNums = new HashSet<>();
 
             // Iterate through the array
-            for (int num : nums) {
+            for (int integerInNums : nums) {
                 // If the HashSet already contains the current element, it's a duplicate
-                if (set.contains(num)) {
+                if (setToStoreDistinctNums.contains(integerInNums)) {
                     return true;
                 }
                 // Otherwise, add the element to the HashSet
-                set.add(num);
+                setToStoreDistinctNums.add(integerInNums);
             }
+
 
             // If we finish iterating without finding duplicates, return false
             return false;
 
 
 
+
         }
+
 
 }
